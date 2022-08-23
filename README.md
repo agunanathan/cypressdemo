@@ -1,4 +1,4 @@
-# ottomashun
+# cypressdemo
 
 Repo Installation Steps:
 1. clone repo
