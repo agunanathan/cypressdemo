@@ -1,0 +1,24 @@
+{
+  "name": "ottomashun",
+  "version": "1.0.0",
+  "description": "Automation Tools Demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "otto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agunanathan/ottomashun.git"
+  },
+  "author": "Asokan Gunanathan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agunanathan/ottomashun/issues"
+  },
+  "homepage": "https://github.com/agunanathan/ottomashun#readme",
+  "devDependencies": {
+    "@percy/cli": "^1.10.0",
+    "@percy/cypress": "^3.1.2",
+    "cypress": "^10.6.0"
+  }
+}
