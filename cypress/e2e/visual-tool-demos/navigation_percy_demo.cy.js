@@ -12,9 +12,10 @@ context('Navigation', () => {
       // https://on.cypress.io/go
   
       cy.location('pathname').should('include', 'navigation')
-  
+      cy.percySnapshot('shouldIncludeNavigation')
       cy.go('back')
       cy.location('pathname').should('not.include', 'navigation')
+      cy.percySnapshot('shouldNotIncudeNavigation')
   
       cy.go('forward')
       cy.location('pathname').should('include', 'navigation')
@@ -34,7 +35,7 @@ context('Navigation', () => {
   
       // reload the page without using the cache
       cy.reload(true)
-      cy.percySnapshot('exampleScreenShot')
+      cy.percySnapshot('reloadOfPageWithoutCache')
     })
   
     it('cy.visit() - visit a remote url', () => {
